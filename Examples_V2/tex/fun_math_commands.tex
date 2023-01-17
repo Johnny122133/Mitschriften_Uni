@@ -1,0 +1,66 @@
+
+
+\begin{center}
+    \captionsetup{type=table}
+    \begin{tblr}{| Q[m, c, 7.5cm]| Q[ m ,l,7.5cm] | } \hline
+        \textbf{Result} & \SetCell{c,m}{\textbf{Code}} \\ \hline[2pt]
+        $a=b \quad b=c \qquad d=e$
+        & a $=$ b \textbackslash quad b $=$ c \textbackslash qquad d $=$ e \\ \hline
+        $\Vec{x}, \hat{x},\Tilde{x},\ \stackrel{!}{=}$
+        & \textbackslash Vec{x}, \textbackslash hat{x},\textbackslash Tilde\{x\},\textbackslash ~ \textbackslash stackrel\{!\}\{=\}\\ \hline
+        $\alpha, \beta, \dots,\varphi, \partial$
+        & \textbackslash alpha, \textbackslash beta, \textbackslash dots,\textbackslash varphi, \textbackslash partial\\ \hline
+        $\dots, \cdots, \vdots$
+        & \textbackslash dots, \textbackslash cdots, \textbackslash vdots\\ \hline
+        $\sum\limits_{a}^{b} \quad \int \limits_{a}^{b}$
+        &\textbackslash sum \textbackslash limits $\_ \{a\}$ \^{} $\{b\}$ \textbackslash quad \textbackslash int \textbackslash limits$\_\{a\}$ \^{} $\{b\}$\\ \hline
+        $\wedge, \vee, \cup, \cap, \leq, \geq, \subset, \supset, \subseteq, \supseteq$ 
+        & \textbackslash wedge, \textbackslash vee, \textbackslash cup, \textbackslash cap, \textbackslash leq, \textbackslash geq, \textbackslash subset, \textbackslash supset, \textbackslash subseteq, \textbackslash supseteq \\ \hline
+        $\in, \forall, \mapsto, \infty, \nabla, \times$
+        & \textbackslash in, \textbackslash forall, \textbackslash mapsto, \textbackslash infty, \textbackslash nabla, \textbackslash times\\ \hline
+        $\dag$
+        & \textbackslash dag\\ \hline
+        \begin{equation*}
+            y(x) = \left\{
+            \begin{aligned}
+                & 1 \quad \text{für } \bm{x>1}\\
+                & 0 \quad \text{für } x\leq 1 
+            \end{aligned} \right.
+        \end{equation*}
+        &{
+        y(x) = \textbackslash left\textbackslash \{ \textbackslash begin\{aligned\}\\
+            \qquad \& 1 \textbackslash quad \textbackslash text\{für \} \textbackslash bm\{x>1\}\\
+            \qquad \& 0 \textbackslash quad \textbackslash text\{für \} x\textbackslash leq 1\\
+        \textbackslash end\{aligned\} \textbackslash right.}\\ \hline
+        %r... right, c... center, l... left
+        \[\left( \begin{array}{rrr}
+            1 & 0 & 0 \\ 
+            0 & 1 & 0 \\
+            0 & 0 & 1 \\ 
+        \end{array}\right)\]
+        & {
+        \textbackslash left ( \textbackslash begin\{array\}\{rrr\}\\
+            \qquad 1 \& 0 \& 0 \textbackslash\textbackslash\\ 
+            \qquad 0 \& 1 \& 0 \textbackslash\textbackslash\\
+            \qquad 0 \& 0 \& 1 \textbackslash\textbackslash\\ 
+        \textbackslash end\{array\}\textbackslash right )}\\ \hline
+        \[\begin{pmatrix}
+            a_1 & b_1 & c_1 \\
+            a_2 & b_2 & c_2 \\
+        \end{pmatrix}\]
+        & {\textbackslash begin\{pmatrix\}\\
+            \qquad  \&  \&  \textbackslash\textbackslash \\
+            \qquad  \&  \&  \textbackslash\textbackslash \\
+        \textbackslash end\{pmatrix\}}\\ \hline
+    \end{tblr}
+    \captionof{table}{fun math commands}\label{table:commands}
+\end{center}
+
+
+\~ ... umbruchgeschütztes Leerzeichen\\
+\textbackslash\ ... Leerzeichen, \textbackslash text\{...\}... Text,\textbackslash bm\{...\}... fett,\textbackslash \{... \{ ,in MathMode\\
+\textbackslash input\{\} ... copys the text of a .tex file.\\
+\textbackslash \ \textbackslash\textbackslash Leerzeile\\
+$\{(x+y)\}$ hoch $2$ ist schöner als $(x+y)$ hoch $2$
+
+

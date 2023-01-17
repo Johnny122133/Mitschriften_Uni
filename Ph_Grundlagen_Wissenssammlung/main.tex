@@ -1,0 +1,41 @@
+%%% Article Template
+%%% Set Document layout
+\documentclass[final, 12pt]{article}
+
+%%%%%%%%%% Set Name, Subject, Date ...
+\newcommand{\toppic}{Ph Grundlagen}
+\newcommand{\mytitle}{Ph Grundlagen}
+\newcommand{\workingDate}{04.10.2022}
+\newcommand{\userName}{Jonathan Mayer}
+%%
+\usepackage{options}
+% chktex-file 46
+% chktex-file 11
+% chktex-file 40
+
+
+
+%%%%%%%%%% Begin the document
+\begin{document}  
+
+
+\input{./tex/Titel.tex} %%%%%%%%%% Titel %%%%%%%%%%%%%%
+
+%%
+\section{Schwingungen:}
+\input{tex/Schwingungen.tex}
+
+\section{Hydrodynamik}
+\input{./tex/Hydrodynamik.tex}
+
+\section{Thermodynamik}
+\input{tex/Thermodynamik.tex}
+
+%%% Verzeichnisse
+\newpage
+%\listoftables
+%\listoffigures
+%\printbibliography{}
+\end{document}     %%% End the document
+
+
