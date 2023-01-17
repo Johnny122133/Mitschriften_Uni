@@ -1,0 +1,30 @@
+\subsection{rechnen mit komplexen Zahlen}
+$z = a +ib = |z|e^{i \varphi} \qquad z_1 = a_1+ib_1 \qquad z_2 = a_2+ib_2$\\
+$z^*$... konjungiert komplex ($z=a+ib \qquad z^*=a-ib$)\\
+
+\textbf{Betrag:} $|z| = \sqrt{a^2+b^2} = \sqrt{z\cdot z^*}$\\
+\textbf{Winkel:} $\varphi _z = \text{arctan}(\frac{b}{a})$\\
+
+\textbf{Komponentenform:} $z=a+ib$
+
+\textbf{Polarform:} $z = |z|e^{i\varphi _z}$\\
+
+\textbf{Addition:} $z_1 \pm z_2 = (a_1 \pm a_2) + i(b_1 \pm b_2)$\\
+
+\textbf{Multiplikation:} $z_1 \cdot z_2 = (a_1 + ib_1) \cdot (a_2 + ib_2) = (a_1a_2 - b_1b_2) + i(a_1b_2 + a_2b_1)$\\
+$z_1\cdot z_2 = |z_1|\cdot |z_2|e^{i(\varphi _{z_1} +\varphi _{z_2})}$\\
+
+
+\textbf{Division:} $\frac{z_1}{z_2}=\frac{z_1}{z_2} \cdot \frac{z_1^*}{z_2^*} = \frac{(a_1a_2+b_1b_2)+i(a_2b_1-a_1b_2)}{a_2^2+b_2^2}$\\
+$z_1 \cdot z_2 = \frac{|z_1|}{|z_2|}e^{i(\varphi _{z_1} -\varphi _{z_2})}$\\
+
+\textbf{Wurzel} $\sqrt{z} = \sqrt{|z|}\cdot e^{i \frac{\varphi +k\cdot 2\pi}{n}} \quad n \in [0,...,n-1]$\\
+Da n verschiedene Lösungen herauskommen müssen, wird zu $\varphi, k*2\pi$ addiert(verändert die Funktion nicht). Beim ziehen der n-ten Wurzel wird der Exponent mit $\frac{1}{n}$ multipliziert.
+
+\subsection{Differenzierbarkeit komplexer Funktionen (Cauchy-Riemannschen Differenzialgleichungen)}
+
+Komplexe Funktionen sind differenzierbar, wenn die Chauchy-Riemannschen Dgl erfüllt sind.\\
+
+$z=u(x,y) + iv(x,y)\qquad f(z) = u(x,y) + iv(x,y)$\\
+
+\[\text{Cauchy-Riemannschen Dgl:}\qquad \frac{\partial u(x,y)}{\partial x} = \frac{\partial v(x,y)}{\partial y} \quad \text{und} \frac{\partial v(x,y)}{\partial y} = - \frac{\partial u(x,y)}{\partial y} \]

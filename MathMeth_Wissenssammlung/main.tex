@@ -1,0 +1,55 @@
+%%% Article Template
+%%% Set Document layout
+\documentclass[final, 11pt]{article}
+
+
+%%%%%%%%%% Set Name, Subject, Date ...
+\newcommand{\toppic}{Vektoren}
+\newcommand{\mytitle}{MathMeth 1 Zusammenfassung}
+\newcommand{\workingDate}{27.12.2022}
+\newcommand{\userName}{Vektoren, Matzitzen, Integrale, DGL, Nabla,...}
+%%
+\usepackage{options}
+
+%%%%%%%%%% Begin the document
+\begin{document}  
+\input{./tex/Titel.tex} %%%%%%%%%% Titel %%%%%%%%%%%%%%
+
+%%
+\section{Begriffe / Zeichen / Rechenregeln}  
+\input{tex/Begriffe}
+
+%%%%
+\section{Reihen und Folgen}
+\input{./tex/Reihen.tex}
+
+\section{Vektoren}
+\input{./tex/Vektoren.tex}
+
+\section{Komplexe Zahlen und Funktionen}
+\input{./tex./Komplexe_Zahlen.tex}
+
+%%%%
+\section{Integrieren / Differenzieren}
+\input{./tex/Integrieren.tex}
+
+\section{Koordinatensysteme}
+\input{./tex/Koordinatensysteme.tex}
+
+\section{Differentialgleichungen}
+\input{./tex/Differentialgleichungen.tex}
+
+\newpage
+\section{Matritzen}
+\input{./tex/Matritzen.tex}
+
+\section{Nabla}
+\input{./tex/Nabla.tex}
+
+%%% Verzeichnisse
+\newpage
+%\listoftables
+%\listoffigures
+\printbibliography{}
+%%%%%% Document end
+\end{document}     %%% End the document
