@@ -1,3 +1,7 @@
 # Mitschriften_Uni
 
-Hallo ihr Nuttensöhne
+## Rules
+
+
+## Git Settup  
+download git: https://gitforwindows.org/
