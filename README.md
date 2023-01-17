@@ -26,7 +26,7 @@ VS-Code: https://code.visualstudio.com/download
 LaTexWorkshop Extensions:https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop  
 for edditing, syntex highlighting and completion and building of .tex files.  
 Prettify: https://marketplace.visualstudio.com/items?itemName=siegebell.prettify-symbols-mode  
-to display \alpha as %\alpha% in source.
+to display \alpha as $\alpha$ in source.
 
 for prettify to work coppy settings_json.tex file and replace your current setting.json in VS Code with it.
 
