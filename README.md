@@ -7,6 +7,8 @@ don't edit settings_json.tex file
 ## Structure
 ExamplesV2... has examples for LaTex commands.  
 KnowledgeBase.pdf... some chaotig LaTex description.  
+no text in main file. Write text in .tex files and import them where needed (\import{folder/name.tex}  
+no blanks or strange characters in file names. name files meaningfully.  
 
 Folders: as folder names imply.
 
