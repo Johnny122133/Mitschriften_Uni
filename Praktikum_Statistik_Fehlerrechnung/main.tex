@@ -1,0 +1,86 @@
+%%% Article Template
+%%% Set Document layout
+\documentclass[final, 12pt]{article}
+
+%%%%%%%%%% Set Name, Subject, Date ...
+\newcommand{\toppic}{Fehlerrechnung}
+\newcommand{\mytitle}{Messstatistik und Fehlerfortpflanzung}
+\newcommand{\workingDate}{11.01.2023}
+\newcommand{\userName}{Jonathan Mayer}
+%%
+\usepackage{options}
+
+%%%%%%%%%% Begin the document
+\begin{document}  
+\input{./tex/Titel.tex} %%%%%%%%%% Titel %%%%%%%%%%%%%%
+
+%%
+\section{Fehler}
+\subsection{Qunatisierungsfehler}
+Der Qunatisierungsfehler beträgt ein halbes \textbf{Skalenteil}.\\
+
+\subsection{Fehlerforpflanzung:}
+$f$... Funktion, $u_{x_i}$ Standardabweichung/Unsicherheit
+\begin{equation}
+    \textbf{Gauß´sche Fehlerfortpflanzung:}\qquad u_z = \sqrt{\sum\limits_{i=1}^{N} \left|\frac{\partial f}{\partial x_i}\right|^2 \cdot u_{x_i}^2}   
+    \label{eq:Gauß}    
+\end{equation}
+
+\section{Messtatistik}
+
+\begin{equation}
+    \text{Gewichteter Mittelw.:} \quad \mu = \frac{\summ{i=1}{N}(g_i*x_i)}{\summ{j=1}{N}g_j} \qquad g_i=\frac{1}{\sigma_{xi}^2}
+    \label{eq:Mittelw}
+\end{equation} 
+
+
+\begin{equation}
+    \text{innere Varianz: }\qquad \sigma_{\mu in}^2= \frac{1}{\summ{i=1}{N}\frac{1}{\sigma_{xi}^2}} \qquad \text{äußere Varianz: }\qquad \sigma_{\mu ex}^2= \frac{\summ {i=1}{N}\frac{(x_i-\mu)^2}{\sigma_{xi}^2}}{\summ {i=1}{N}\frac{1}{\sigma_{xi}^2}}
+    \label{eq:Varianz}
+\end{equation} 
+       
+
+%%
+\section{Optik:}
+
+\subsection{Bessl Verfahren:}
+
+\section{Elektrik}
+
+\subsection{Widerstände}
+\textbf{Reihenschaltung:} $R_{ges} = \summ {0}{n} R_n$\\
+
+\textbf{Parallelschaltung:} $R_{ges} = \frac{1}{\sum\limits_{n=0}^{N} \frac{1}{R_n}}$\\
+
+\textbf{Knotenregel:} $\sum R_{in}=\sum R_{out}$\\
+Die Summe der Ströme in den Knoten muss gleich der Summe der Ströme aus dem Knoten sein.
+\\
+
+\textbf{Maschenregel:} Summe aller Spannungn ist 0. 
+
+\subsection{Statistik, lineare Regression}
+
+$x^2=\sum\limits_{i}^{N=5} \left ( \frac{d_i}{s_i} \right )^2$ not finished
+
+wenn $s_i =$ const.: $x^2 = \frac{1}{s_i^2}\sum d_i^2$
+
+\textbf{Optimierungsbedingung für Parameter $a_0, a_1$:}
+
+$d^2=\sum\limits_{i=1}^{N}\left(\frac{y_i-a_0-a_1x_i}{s_i}\right)^2 \rightarrow $ Minimum
+
+--> Minimum durch Ableitung:\\
+$0=\frac{dx^2}{da_0}=-2 \sum\left(\frac{y_i-a_0-a_1x}{s_i^2}\right)$\\
+$0=\frac{dx^2}{da_1}=-2 \sum\left(\frac{y_i-a_0-a_1x}{s_i^2}\right)$
+
+
+$<x>$... Erwartungswert
+
+%%% Verzeichnisse
+\newpage
+%\listoftables
+%\listoffigures
+%\printbibliography{}
+%%%%%% Document end
+\end{document}     %%% End the document
+
+
