@@ -1,6 +1,7 @@
 # Mitschriften_Uni
 
 ## Rules
+read the readme
 pull before push!! (use VS-Code/source control)  
 don't edit settings_json.tex file
 
