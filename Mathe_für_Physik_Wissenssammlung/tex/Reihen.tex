@@ -1,20 +1,48 @@
 \begin{description}
-    \item[\textbf{Definition:}] Eine Reihe ist eine Partialsumme einer Folge $(p_n)_n = \left(\sum\limits_{i=0}^{n}a_i \right)_n$, $p_n$... Reihe, $a_i$... Folge\\
+    \item[\textbf{Definition:}] Eine Reihe ist eine Partialsumme einer Folge\\
+    $(p_n)_n = \left(\sum\limits_{i=0}^{n}a_i \right)_n$, $p_n$... Reihe, $a_i$... Folge\\
+
+    \item [\textbf{geometrische Reihe:}] $\sum\limits_{i=0}^{\infty} q^i$ mit $|q|<1$ konvergent, $\bm{\sum\limits_{i=0}^{\infty} q^i = \frac{1}{1-q}}$
     \item[\textbf{harmonische Reihe:}] $\sum\limits_{k=1}^{\infty}\frac{1}{k}$ ist divergent\\
-    \item[$\sum\limits_{k=1}^{\infty}\frac{1}{k^r}$] konvergiert für $r\geq 2$\\
+    \item[\textbf{... Reihe}] $\sum\limits_{k=1}^{\infty}\frac{1}{k^r}$ konvergiert für $r\geq 2$\\
+    \item[\textbf{Rechenregeln für konvergente Reihen:}]\ \\
+    $\sum\limits_{i=0}^{\infty}(a_i+b_i) = \sum\limits_{i=0}^{\infty}a_i + \sum\limits_{i=0}^{\infty} b_i$\\
+
+    $\sum\limits_{i=0}^{\infty}\gamma a_i = \gamma \sum\limits_{i=0}^{\infty} a_i$\\          
 \end{description}
 
 
 
+\subsection{Konvergenzkriterien für Reihen}
 
-\subsection{Konvergenzkriterien}
+\textbf{absolute Konvergenz:} Eine Reihe $\sum_{i=0}^{\infty}a_i$ in $\mathbb{R}$ oder $\mathbb{C}$ heißt absolut konvergent, falls $\sum_{i=0}^{\infty}|a_i|$ konvergiert.
+i=0 |ai| konvergiert. Es gilt:$|\sum_{i=0}^{\infty}a_i| \leq \sum_{i=0}^{\infty}|a_i|$.\\
 
-\textbf{Definition Konvergenz:} \\
+Eine \textbf{Komplexe Reihe} $\sum_{i=0}^{\infty}a_i$ konvergiert/konvergiert absolut wenn $\sum_{i=0}^{\infty}\Re(a_i)$ und $\sum_{i=0}^{\infty}\Im(a_i)$ konvergieren/absolut konvergieren.\\
 
-\textbf{Definition absolute Konvergenz:} \\$\sum\limits_{k=1}^{\infty}\frac{1}{k}$ 
+\textbf{konvergiert die Reihe} $\sum_{i=0}^{\infty}a_i$ muss ($\lim_{i\to\infty}a_i = 0$) sein (notwendiges aber nicht hinreichendes Kriterium).\\
+
+\textbf{$\bm{\sum_{k=0}^{\infty}a_k}$ konvergiert} genau dann, wenn die Folge von \textbf{Partialsummen} beschränkt ist.
+
+\subsubsection{Leibnitz Kriterium}
+Sei $(a_k)_k$ eine monoton fallende Nullfolge positiver reeller Zahlen dann konvergiert\\
+\[\sum\limits_{k=0}^{\infty}(-1)^ka_k\]
+zeigt Konvergenz aber \textbf{nicht} absolute Konvergenz.
+
 
 \subsubsection{Minoranten- Majoranten Kriterium}
+falls $\forall n: 0\leq a_n \leq b_n \wedge \sum_{i=0}^{\infty}b_i$ konvergent, dann konvergiert auch $\sum_{i=0}^{\infty}a_i$\\
 
-\subsection{Quotientenkriterium}
+falls $\forall n: 0\leq a_n \leq b_n \wedge \sum_{i=0}^{\infty}a_i$ divergent, dann divergiert auch $\sum_{i=0}^{\infty}b_i$\\
 
-\subsection{Wurzelkriterium}
+
+\subsubsection{Quotientenkriterium}
+Sei $(a_n)_n$ eine Folge in $\mathbb{R}$ oder $\mathbb{C}$ und $\forall n :a_n \neq 0$ dann ist $\sum_{i=0}^{\infty}a_i$ absolut konvergent wenn:
+\[\lim\limits_{n\to \infty}\sup\left|\frac{a_{n+1}}{a_n}\right|<1\]
+divergent wenn obiges $>1$ ist.
+
+\subsubsection{Wurzelkriterium}
+Sei $(a_n)_n$ eine beschränkte Folge in $\mathbb{R}$ oder $\mathbb{C}$ dann ist $\sum_{i=0}^{\infty}a_i$ absolut konvergent wenn:
+\[\lim\limits_{n\to \infty}\sup \sqrt[n]{|a_n|}<1\]
+divergent wenn obiges $>1$.
+
