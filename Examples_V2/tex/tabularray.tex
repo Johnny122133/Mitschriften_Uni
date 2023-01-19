@@ -1,0 +1,24 @@
+
+%Q[(h,m,f),(l,c,r),(width)]     thick line: |[1.5pt]
+\begin{center}
+    \captionsetup{type=table}
+    \begin{tblr}{| Q[l,t,5cm] | Q[l,t,5cm] |} \hline
+    C1 & C2 \\ \hline
+    \end{tblr}
+    \captionof{table}{TestTable}\label{table:Test}
+\end{center}
+
+\begin{center}
+    \begin{tblr}{|l|l|r|}\hline
+        1&2&3\\ \hline[1.5pt]
+        1&2 \\ \hline        
+    \end{tblr}
+\end{center}
+
+
+\subsection{Example Figure}
+\begin{center}
+    \captionsetup{type=figure}
+    \includegraphics[width=.4\textwidth]{Pictures/JKU-Logo.jpg}
+    \caption{TestFigure}\label{fig:test}
+\end{center}

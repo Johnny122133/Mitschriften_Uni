@@ -1,0 +1,39 @@
+%%% Article Template
+%%% Set Document layout
+\documentclass[final, 12pt]{article}
+
+%%%%%%%%%% Set Name, Subject, Date ...
+\newcommand{\toppic}{Analysis}
+\newcommand{\mytitle}{Analysis}
+\newcommand{\workingDate}{12.01.2023}
+\newcommand{\userName}{Jonathan Mayer}
+%%
+\usepackage{options}
+
+%%%%%%%%%% Begin the document
+\begin{document}  
+\input{./tex/Titel.tex} %%%%%%%%%% Titel %%%%%%%%%%%%%%
+
+%%
+\section{Begriffe}
+\input{tex/Begriffe.tex}
+
+
+\section{Reihen}
+\input{tex/Reihen.tex}
+
+%%
+\section{Stetigkeit}
+\input{tex/Stetigkeit.tex}
+
+
+
+%%% Verzeichnisse
+\newpage
+%\listoftables
+%\listoffigures
+%\printbibliography{}
+%%%%%% Document end
+\end{document}     %%% End the document
+
+

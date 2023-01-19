@@ -1,0 +1,104 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ProvidesPackage{options}
+%% Package with:
+%% Layout: header, footer
+%% Packages: math, plotting, figures, tables
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% General setup
+\usepackage[a4paper,top=2.5cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry} % Layout
+\usepackage{fancyhdr} % pagestyle, https://de.wikibooks.org/wiki/LaTeX-W%C3%B6rterbuch:_fancyhdr
+\usepackage[german]{babel} % language
+\usepackage[utf8]{inputenc} % symbols which are not ASCII (ö,ü...)
+\usepackage[T1]{fontenc}    % Zeichenbelegung der verwendeten Schrift
+
+%% general writing
+\usepackage{enumitem}   % description, itemize, enumerate, https://www.namsu.de/Extra/pakete/Enumitem.html
+\usepackage{indentfirst}% parindent package
+\usepackage{color}
+\definecolor{darkblue}{RGB}{47,68,117}  % define a colour
+\definecolor{lightgray}{gray}{0.95}     % define a colour
+\usepackage{framed} % create framed text elements, https://ctan.math.illinois.edu/macros/latex/contrib/framed/framed.pdf
+\usepackage[urlcolor=blue]{hyperref} % for adding urls
+
+%% Math
+\usepackage{amsmath}    % Math mode
+\usepackage{amsfonts}   % Math fonts 
+\usepackage{amssymb}    % Math symbols
+\usepackage{bm}         % bold math
+\usepackage{mathrsfs}   % Font for math mode
+
+%% Figures and Pdfs
+\usepackage{graphicx}   % for including pictures
+\graphicspath{ {./documents/} }    % image path
+\usepackage{caption}    % caption for figures etc. https://www.namsu.de/Extra/pakete/Caption.html
+\usepackage{pdflscape}  % rotate pdf
+\usepackage{wrapfig}    % wrap text around figures, https://www.namsu.de/Extra/pakete/Wrapfig.html
+\usepackage{pdfpages}   % include pdf
+
+%% Tables
+\usepackage{tabularray} % better tables
+\usepackage{multirow}   % allows for multirow cells, https://www.namsu.de/Extra/pakete/Multirow.html
+\usepackage{booktabs}   % tables
+\usepackage{makecell}   % Zeilenumbruch in Zelle
+
+%% Creating graphix and scatches
+\usepackage{pgfplots}   % create diagrams, https://www.overleaf.com/learn/latex/Pgfplots_package#Introduction
+\pgfplotsset{compat=1.15}
+\usepackage{tikz} % create graphix elements, https://de.overleaf.com/learn/latex/TikZ_package
+\usepackage[usenames,dvipsnames]{pstricks} % direct implementation of post script drawings https://en.wikibooks.org/wiki/LaTeX/PSTricks#Rectangles 
+
+
+%% Bibs
+\usepackage[ backend=biber, style=numeric, sorting=ynt]{biblatex}
+\addbibresource{references.bib} % Bib resource file
+
+%% other
+\usepackage{extract}    % tool to extract stuff out of other documents
+\usepackage{csquotes}   % quote, Anführungszeichen
+\usepackage{epsfig}     % encapsulated post script for figures
+\usepackage{lipsum}     % dummy text
+\usepackage{textcomp}   % more symbols
+
+%%%%%%%%%%%%%% Commands %%%%%%%%%%%%%%
+\newcommand{\abs}[1]{\ensuremath{\left\vert#1\right\vert}}
+% easy absolut value for formulas, use: \abs(\frac{x}{y}) gives |x / y|
+% simple greel letters
+\newcommand{\ga}{\ensuremath{\alpha\ }}
+\newcommand{\gb}{\ensuremath{\beta\ }}
+\newcommand{\gc}{\ensuremath{\gamma}}
+\newcommand{\gd}{\ensuremath{\delta}}
+\newcommand{\bga}{\ensuremath{\bm{\alpha\ }}}
+\newcommand{\bgb}{\ensuremath{\bm{\beta\ }}}
+\newcommand{\bgg}{\ensuremath{\bm{\gamma}}}
+\newcommand{\bgd}{\ensuremath{\bm{\delta}}}
+% units
+\newcommand\m{\:\textrm{m}}
+\newcommand\M{\:\Big[\textrm{m}\Big]}
+\newcommand\mm{\:\textrm{mm}}
+\newcommand\MM{\:\Big[\textrm{mm}\Big]}
+\newcommand\un{\underline}
+\newcommand\s{\:\textrm{s}}
+\newcommand\bS{\:\Big[\textrm{S}\Big]}
+\newcommand\ms{\:\frac{\textrm{m}}{\textrm{s}}}
+\newcommand\MS{\:\Big[\frac{\textrm{m}}{\textrm{s}}\Big]}
+\newcommand\mss{\:\frac{\textrm{m}}{\textrm{s}^2}}
+\newcommand\MSS{\:\Big[\frac{\textrm{m}}{\textrm{s}^2}\Big]}
+
+%%%%%%%%%%%%%% Layout %%%%%%%%%%%%%%
+\setlength\parindent{0cm}   % Indent after paragraph
+\setlist{noitemsep} %% Kein Abstand zwischen Bulletpoints (itmeize)
+\setlength\headheight{45pt}
+\setlength\headsep{15pt}
+\setlength\textheight{670pt}
+% above 2: https://www.overleaf.com/learn/latex/Page_size_and_margins
+
+
+%%%%%%%%%%%%%% HEADER / FOOTER %%%%%%%%%%%%%%
+\lhead{}
+\chead{}
+\rhead{\workingDate\\\userName}
+
+\lfoot{\toppic}
+\cfoot{}
+\rfoot{\thepage}

@@ -1,0 +1,55 @@
+%%% Article Template
+%%% Set Document layout
+\documentclass[final, 12pt]{article}
+
+
+%%%%%%%%%% Set Name, Subject, Date ...
+\newcommand{\workingDate}{04.10.2022}
+\newcommand{\userName}{Jonathan Mayer}
+\newcommand{\subject}{Latex Knowledgebase}
+\newcommand{\exercise}{}
+\newcommand{\toppic}{}
+\newcommand{\titel}{Latex Knowledgebase}
+\usepackage{options}
+
+
+%%%%%%%%%% Begin the document %%%%%%%%
+\begin{document}  
+\input{./Tex/Titel.tex} %%%%%%%%%% Titel %%%%%%%%%%%%%%
+
+%%
+\section{Examples}
+\subsection{fun math commands}
+\input{Tex/fun_math_commands.tex}
+
+\subsection{Textumbruch und Aufzählungen}
+\input{Tex/Textumbruch_Aufzaehlungen.tex}
+
+\subsection{urls, Hyperlinks, Verweise und Quellen}
+\input{Tex/urls.tex}
+
+\subsection{Example Equation}
+\input{Tex/Equation.tex}
+
+\subsection{Tabularry example}
+\input{Tex/tabularray.tex}
+
+\subsection{Example wrap figure}
+\input{Tex/wrapfigure.tex}
+
+\subsection{Minipages}
+\input{Tex/Minipages.tex}
+
+\section{Special tables}
+\input{Tex/special_tables.tex}
+
+\section{more Math stuff}
+\input{Tex/more_math.tex}
+
+%%% Verzeichnisse
+\newpage
+\listoftables
+\listoffigures
+\printbibliography{}
+%%%%%% Document end
+\end{document}     %%% End the document

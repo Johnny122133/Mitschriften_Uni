@@ -1,0 +1,47 @@
+
+\href{https://ctan.math.illinois.edu/macros/latex/contrib/tabularray/tabularray.pdf}{tabularray dokumentation}\\
+
+\begin{tblr}{|c|c|c|c|c|}
+\hline
+    \SetCell[r=2]{c} {Line 1 \\ Line 2 }& \SetCell[c=2]{c} 2 Columns
+    & & \SetCell[r=2,c=2]{c} 2 Rows 2 Columns & \\ \hline
+    & 2-2 & 2-3 & & \\ \hline
+    3-1 & 3-2 & 3-3 & 3-4 & 3-5 \\ \hline
+\end{tblr}
+
+\begin{tblr}{
+    vlines = {odd}{dashed},
+    vlines = {even}{solid},
+    }
+    Alpha & Beta & Gamma & Delta \\
+    Epsilon & Zeta & Eta & Theta \\
+    Iota & Kappa & Lambda & Mu \\
+    Nu & Xi & Omicron & Pi \\
+    Rho & Sigma & Tau & Upsilon \\
+\end{tblr}
+
+\begin{tblr}{
+    hlines = {1}{-}{dashed},
+    hlines = {2}{-}{solid},
+    }
+    Alpha & Beta & Gamma & Delta \\
+    Epsilon & Zeta & Eta & Theta \\
+    Iota & Kappa & Lambda & Mu \\
+\end{tblr}
+
+\begin{tblr}{|l|[dotted]|[2pt]c|r|[solid]|[dashed]|}
+    \hline
+    One & Two & Three \\
+    \hline\hline[dotted]\hline
+    Four & Five & Six \\
+    \hline[dashed]\hline[1pt]
+    Seven & Eight & Nine \\
+    \hline
+    \end{tblr}
+    
+    \begin{tblr}{|Q[l,t]|Q[c,m]|Q[r,b]|}
+    \hline
+    {Top Baseline \\ Left Left} & Middle Center & {Right Right \\ Bottom Baseline} \\
+    \hline
+\end{tblr}
+
