@@ -5,7 +5,7 @@
 2. pull before push!! (use VS-Code/source control)  
 3. don't edit the settings_json.tex file
 4. Read Rule 1.
-5. Reconsider all your life choises
+5. Reconsider all your life choices
 
 ## Structure
 + ExamplesV2... has examples for LaTex commands.  
@@ -19,11 +19,11 @@
 
 
 ## Setup  
-Download all below.
+*Download all below.*
 
 ### Git
-download git: https://gitforwindows.org/  
-git needs to be installed
++ download git: https://gitforwindows.org/  
+    *git needs to be installed*
 
 ### VS-Code
 + VS-Code: https://code.visualstudio.com/download  
