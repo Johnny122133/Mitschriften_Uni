@@ -1,0 +1,24 @@
+xcolor documentation: \url{https://www.namsu.de/Extra/pakete/Xcolor.html}\\
+
+there is a coloured box:\ 
+\colorbox{lightgray}
+{\begin{minipage}{4 cm}
+    there should be a coloured textbox, aligned to the center of the line.
+\end{minipage}
+}\\
+
+There is an important paragraph:\\
+
+\hspace*{3 em} \fcolorbox{black}{lightgray}{
+\begin{minipage}[t]{.6 \textwidth}
+    This is an important paragraph, a very important paragraph, a very very important paragraph, im am very very very shure about that.
+\end{minipage}}
+\ \\
+
+Only framed is possible with fbox (\textbackslash usepackage\{fbox\}):\\
+\hspace*{3 em} \fbox{
+\begin{minipage}[t]{.6 \textwidth}
+    This is an important paragraph, a very important paragraph, a very very important paragraph, im am very very very shure about that.
+\end{minipage}}
+\ \\
+or with \textbackslash fcolorbox\{black\}\{lightgray\}
