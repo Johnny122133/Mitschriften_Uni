@@ -63,38 +63,10 @@ A=\begin{pmatrix}
  a_2 \cdot c_1 + b_2 \cdot c_2 & a_2 \cdot d_1 + b_2 \cdot d_2 \\
 \end{pmatrix}\]\\
 
-\[
-    k*A*x*B = k*x*(A*B) \qquad \text{ mit } k,x \text{ }
-\]
-
-\subsection{Eigenwert und Eigenvektor}
-charakteristisches Polynom: $P(\lambda)=\text{det}(A-\lambda I)$\\
-
-Skript 2022x12x07 DGL Systeme Seite 4\\
-
-\textbf{Eigenwerte:} Nullstellen $\lambda_i$ von $P(\lambda)$, $P(\lambda)=\text{det}(A-\lambda I) \stackrel{!}{=} 0$\\
-
-\textbf{Eigenvektor:} $\text{Eig}(A, \lambda_i):(A-\lambda_i I)\cdot \vec{x} = 0$
-mit $\vec{x} = \begin{pmatrix}
-    x_1\\
-    x_2\\
-    x_3\\
-\end{pmatrix}$\\
-Die Gleichung nach $x_1,x_2,...1$ auflösen, dann kann der Eigenvektor in Form \\
-\[\text{Eig}(A,\lambda_i)= \left\{ \vec{x} \in \mathbb{R}^3 : \vec{x} = r \cdot
-\begin{pmatrix}
-    x\\
-    y\\
-    z\\
-\end{pmatrix} ; x \in \mathbb{R} \right\}\]
-geschrieben werden.
-
- % \[\text{Eig}(A,\lambda_i)= \left { \vec{x} \in \mathbb{R}^3 : \vec{x} = r \cdot
-% \begin{pmatrix}
-%     x\\
-%     y\\
-%     z\\
-% \end{pmatrix} ; x \in \mathbb{R} \right } \]
+\begin{align}
+    k*A*x*B &= k*x*(A*B) \qquad \text{ mit } k,x \text{ Konstanten, }A,B \text{ Matritzen}\\
+    A\cdot \vec{b} &= \vec{c} \leftrightarrow \vec{b} = A^{-1}\vec{c}    
+\end{align}
 
 
 \subsection{Invertieren einer Matrix}
@@ -167,13 +139,38 @@ gegeben durch
 Man ersetz die $i$-te Spalete von $A$ durch die Lösung $b$ des LGS. Dann ist $x_i$ der Quotient der so entstandenen Matrix und det$A$.
 
 \subsection{Eigenwertproblem}
-$A$... Matrix, $\vec{v}$... Vektor, $k$... Konstante\\
-\[\textbf{Eigenwertproblem:}\quad \bm{A\cdot \vec{v} = k \cdot \vec{v}}\]
+$A$... Matrix, $\vec{v}$... Vektor, $k$... Konstante, $I$... Einheitsmatrix\\
+\[\textbf{Eigenwertproblem:}\quad \begin{aligned}
+    &A\cdot \vec{v} = k \cdot \vec{v}\\
+    &A\cdot v - \lambda \cdot v = 0\\
+    & (A-\lambda I)\cdot v = 0 \\
+\end{aligned}
+\]
+
+Jeder Vektor $\vec{v}$ welcher diese Gleichung erfüllt, ist ein Eigenvektor von $A$.\\
 
 \textbf{charakteristisches Polynom:}
-$P(\lambda) = \text{det}(A-\lambdaE_n) \stackrel{!}{=} 0$\\
-die Nullstellen von $P(\lambda)$ sind die \textbf{Eigenwerte} der Matrix $A$.
+$P(\lambda) = \text{det}(A-\lambda I)$\\
 
+\textbf{Eigenwerte:} $P(\lambda) \stackrel{!}{=} 0$ \qquad Nullstellen des charakteristischen Polynoms sind die Eigenwerte der Matrix $A$.\\
 
+\textbf{Eigenvektor:} $\text{Eig}(A, \lambda_i):(A-\lambda_i I)\cdot \vec{x} = 0$
+mit $\vec{x} = \begin{pmatrix}
+    x_1\\
+    x_2\\
+    x_3\\
+\end{pmatrix}$\\
+Die Gleichung nach $x_1,x_2,...1$ auflösen, dann kann der Eigenvektor in Form \\
+\[\text{Eig}(A,\lambda_i)= \left\{ \vec{x} \in \mathbb{R}^3 : \vec{x} = r \cdot
+\begin{pmatrix}
+    x\\
+    y\\
+    z\\
+\end{pmatrix} ; x \in \mathbb{R} \right\}\]
+geschrieben werden.
 
-Jeder Vektor $\vec{v}$ welcher diese Gleichung erfüllt, ist ein Eigenvektor von $A$
+\subsubsection{Herleitung:}
+Gibt es nun eine Zahl $\lambda$ und einen Vektor v, sodass dieser durch Multiplikation mit der Matrix $\left(A-\lambda I_n\right)$ auf den Nullvektor abgebildet wird, so ist diese Matrix nicht von vollem Rang und die Multiplikation mit einem Vektor nicht injektiv . Dass die Matrix $\left(A-\lambda I_n\right)$ keinen vollen Rang besitzt ist gleichbedeutend damit, dass ihre Determinante Null ist. Wenn es also eine Lösung des Eigenwertproblems gibt, muss gelten:\\
+
+$\mathrm{det}\left(A-\lambda I_n\right)=0$\\
+

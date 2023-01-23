@@ -1,10 +1,39 @@
 
-\[ \vec{y}´(t)=A\cdot\vec{y}(t) + \vec{f}(t)\]
+\[ \bm{\dot{\vec{y}}(t)=A\cdot\vec{y}(t) + \vec{f}(t)}\]
 
-mit: $I$... Intervall $\vec{f}(t)=\left(
-    \begin{array}{r}
-        f_1(t)\\
+
+\textbf{Kochrezept:}\\
+\begin{itemize}
+    \item Aufstellen der Systemmatrix ($y'(t) = A y(t)$)
+    \item Eigenwerte $\lambda$ von A bestimmen ($\text{det}(A-\lambda I_n)\stackrel{!}{=}0$)
+    \item Eigenvektoren von A berechnen ($(A-\lambda_i I_n)\vec{x} \stackrel{!}{=}\vec{0}$)
+    \item Fundamentalsystem ($\vec{x}_i e^{\lambda_i t}$)
+    \item allgemeine Lösung (Summe des Fundamentalsysteme)
+    \item homogene Lösung (Anfangsbedingungen einsetzen)
+    \item partikuläre Lösung Variation der Konstanten oder Ansatz
+\end{itemize}
+
+\subsubsection{partikuläre Lösung:}
+\textbf{Zeilenweise auflösen:}\\
+Die partikuläre Lösung kann Zeilenweise über Variation der Konstanten oder per Ansatz mit Tabelle bestimmt werden.\\
+
+Der partikuläre Ansatz wird in die Differentialgleichung Zeilenweise eingesetzt und anschließend in die Form
+\begin{align*}
+    B \begin{pmatrix}
+        \dot{C}_1 e^{i\lambda_1 t}\\
         \vdots\\
-        f_n(t)\\
-    \end{array} \right) : I \rightarrow \mathbb{R}^n$, $A$... $n\times n$ Matrix.\\
-    Ist $f_i(t) = 0$ wird die LDGDL als homogen bezeichnet.
+        \dot{C}_ie^{i\lambda_i t}\\
+    \end{pmatrix} = \vec{f(t)}  
+\end{align*}
+
+gebracht. Durch invertieren kann umgeformt werden:
+
+\begin{align*}
+    \begin{pmatrix}
+        \dot{C}_1 e^{i\lambda_1 t}\\
+        \vdots\\
+        \dot{C}_ie^{i\lambda_i t}\\
+    \end{pmatrix} =B^{-1} \vec{f(t)}  
+\end{align*}
+
+Die Komponenten von $\vec{C}(t)$ können durch zeilenweises umformen und integrieren bestimmt werden.
