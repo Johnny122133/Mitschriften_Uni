@@ -1,5 +1,5 @@
 
-\textbf{lineare Abhängig:} Eine Zeile einer Matrix ist das Vielfache einer Anderen.\\
+\textbf{lineare Abhängig:} Eine Zeile einer Matrix ist das Vielfache einer Anderen. In diesem Fall ist die Determinante $=0$.\\
 
 \subsection{Determinante}
 \[A=\begin{pmatrix}
@@ -27,7 +27,7 @@ $z_1,...,z_n$ ... Zeilen, $s_1,...,s_n$... Spalten der Matrix
 \begin{itemize}
     \item $\det(s_1,s_2,s_3) = (-1)\cdot \det (s_1,s_3,s_2) = \det(s_3,s_1,s_2)$\\
     werden zwei Zeilen/Spalten vertauscht, muss die Determinante mit $(-1)$ multipliziert werden.
-    \item Addition des Vielfachen einer zeile/Spalte zu einer Anderen ändert den Wert nicht.
+    \item Addition des Vielfachen einer Zeile/Spalte zu einer Anderen ändert den Wert nicht.
     \item $\det(k\cdot z_1,z_2,z_3)^T = k \cdot \det(z_1,z_2,z_3)^T \qquad \det(k\cdot a) = k^3\cdot  \det(A)$
     \item $\det(A^{-1} = \frac{1}{\det(A)})$
     \item $\det(A^k) = (\det(A))^k$
@@ -36,7 +36,7 @@ $z_1,...,z_n$ ... Zeilen, $s_1,...,s_n$... Spalten der Matrix
     \item $\bm{\vec{a}\cdot (\vec{b}\times \vec{c})=\det(\vec{a}, \vec{b}, \vec{c})}$
 \end{itemize}
 
-\subsubsection{Laplace´scher Entwicklungssatz:}
+\subsubsection{Laplace´scher Entwicklungssatz: /needs some rework}
 
 \[
 \text{det}\ A=\sum\limits_{j=1}^{n}(-1)^{i+j}\cdot a_{ij}\cdot \text{det}\ A'_{ij}\qquad \text{für ein festes}\ i\text{ oder } j \in \{1,\ldots,n \}
@@ -98,7 +98,9 @@ Neben die Matrix wird die Einheitsmatrix geschrieben
 
 Die Matrix wird solange mit elementarer Zeilenumformung umgeformt, bis auf der linken Seite die Einheitsmatrix steht (Gauß-Jordan-Verfahren). \\
 
-\textbf{elementare Zeilenumforumengen:}  
+\subsection{elementare Zeilenumforumengen:}  
+Ändern weder die Lösung noch die Inverse der Matrix. Vertauschen von Zeilen ändert jedoch das Vorzeichen der Determinante!\\
+
 \begin{itemize}
     \item Vertauschen von zwei Zeilen
     \item Multiplikation einer Zeile mit $k \neq 0$
