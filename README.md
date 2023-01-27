@@ -1,11 +1,17 @@
 # Mitschriften_Uni
 
+## ToDo
++ translate python package comments to english
++ add formulas and further comments to python package
++ create python package Readme with settup and usage guide
+
 ## Rules
 1. Read the README
 2. pull before push!! (use VS-Code/source control)  
 3. don't edit the settings_json.tex file
-4. Read Rule 1.
-5. Reconsider all your life choices (imediatly and thoroughly)
+4. do things you cand do from ToDo list
+5. Read Rule 1.
+6. Reconsider all your life choices (imediatly and thoroughly)
 
 ## Structure
 + ExamplesV2... has examples for LaTex commands.  
@@ -17,20 +23,26 @@
 > *at some point all of the subjects will be added into one main .tex file. For the moment the subjects are seperated.*
 
 ## Git
-+ git pull
-+ git commit -am
-+ git push
-+ git clone
-### in VS-Code:
+### new
++ select empty folder/rightclick /git bash here / git clone + link (git repository, link) (use rightclick einfügen)
 
-###
+### in VS-Code:
++ button commit/commit message in top line/checkmark in right topp corner
++ sync
+
+### in git terminal
++ git add --all (only when tere was a new file created)
++ git commit -am "commit message"
++ git pull
++ git push
 
 ## Setup  
-*Download all below.*
+*Download git for git usage. The rest is for writing LaTex in VS-Code.*  
+instead of VS-Code LaTex can also be edited online in overleafe. No settup needed. Account has to be created.  
 
 ### Git
 + download git: https://gitforwindows.org/  
-    *git needs to be installed*
+    *git needs to be installed to use git*  
 
 ### VS-Code
 + VS-Code: https://code.visualstudio.com/download  
@@ -44,4 +56,4 @@
 
 ### Tex
 + install Tex: https://tug.org/texlive/  
-__necessarry!!__
+__necessarry for using LaTex in VS-Code (or any other editor besides online ones like overleave)!!__  
