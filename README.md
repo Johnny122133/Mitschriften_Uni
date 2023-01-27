@@ -31,11 +31,12 @@
 + git push
 
 ## Setup  
-*Download all below.*
+*Download git for git usage. The rest is for writing LaTex in VS-Code.*  
+instead of VS-Code LaTex can also be edited online in overleafe. No settup needed. Account has to be created.  
 
 ### Git
 + download git: https://gitforwindows.org/  
-    *git needs to be installed*
+    *git needs to be installed to use git*  
 
 ### VS-Code
 + VS-Code: https://code.visualstudio.com/download  
@@ -49,4 +50,4 @@
 
 ### Tex
 + install Tex: https://tug.org/texlive/  
-__necessarry!!__
+__necessarry for using LaTex in VS-Code (or any other editor besides online ones like overleave)!!__  
