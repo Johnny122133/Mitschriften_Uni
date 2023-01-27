@@ -16,7 +16,14 @@
 
 > *at some point all of the subjects will be added into one main .tex file. For the moment the subjects are seperated.*
 
+## Git
++ git pull
++ git commit -am
++ git push
++ git clone
+### in VS-Code:
 
+###
 
 ## Setup  
 *Download all below.*
