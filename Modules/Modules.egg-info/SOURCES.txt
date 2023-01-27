@@ -1,0 +1,8 @@
+setup.py
+Modules/Messstatistik.py
+Modules/__init__.py
+Modules.egg-info/PKG-INFO
+Modules.egg-info/SOURCES.txt
+Modules.egg-info/dependency_links.txt
+Modules.egg-info/namespace_packages.txt
+Modules.egg-info/top_level.txt
