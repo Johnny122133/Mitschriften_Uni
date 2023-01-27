@@ -17,13 +17,18 @@
 > *at some point all of the subjects will be added into one main .tex file. For the moment the subjects are seperated.*
 
 ## Git
-+ git pull
-+ git commit -am
-+ git push
-+ git clone
-### in VS-Code:
+### new
++ select empty folder/rightclick /git bash here / git clone + link (git repository, link) (use rightclick einfügen)
 
-###
+### in VS-Code:
++ button commit/commit message in top line/checkmark in right topp corner
++ sync
+
+### in git terminal
++ git add --all (only when tere was a new file created)
++ git commit -am "commit message"
++ git pull
++ git push
 
 ## Setup  
 *Download all below.*
