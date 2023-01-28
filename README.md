@@ -3,7 +3,8 @@
 ## ToDo
 + translate python package comments to english
 + add formulas and further comments to python package
-+ create python package Readme with settup and usage guide
++ improve python package Readme with settup and usage guide
++ add runden to pyhton package
 
 ## Rules
 1. Read the README
