@@ -1,5 +1,12 @@
 \begin{center}
-    \begin{tblr}{ll}
+    \begin{longtblr}[
+        caption = {Grundbegriffe},
+        label = {tblr:Grundbegriffe}
+    ]{
+        colspec = {l l},
+        rowhead = 1,
+        row{odd} = {gray9}
+    }
         \textbf{Symbol}         & \textbf{Bedeutung} \\ \hline[1.5pt]
         $R$                    & Relation \\\hline
         $\in/ \notin$          & Element / kein Element von \\\hline
@@ -22,7 +29,7 @@
         $\stackrel{?}{=}$      & zu zeigen \\\hline
         $\stackrel{!}{=}$      & soll erfüllt sein um ... zu zeigen \\\hline
         $:=, \equiv$           & definiere \\\hline
-        $\cup,\cap, /$         & Vereinigung, Durchschnitt, Subtrahiert \\\hline
+        $\cup,\cap, \backslash$         & Vereinigung, Durchschnitt, Subtrahiert \\\hline
         disjunkt               & $A \cap B = \{\}$ \\\hline
         infimum \\\hline
         supremum \\\hline
@@ -31,11 +38,26 @@
         Nullfolge  &   $(a_k)_k$ ist eine Nullfolge wenn $\lim_{k\to\infty}a_k=0$\\ \hline
         surjektiv & $\forall y \in Y : \exists \  x \in X:f(x)=y$ \ref{subs:surjektivitaet}\\ \hline
         injektiv &$\forall x_1,x_2 \in X:f(x_1)=f(x_2) \Rightarrow x_1=x_2$   \ref{subs:injektivitaet}\\ \hline
-        bijektiv & $\forall y \in Y : \exists ! \  x \in X:f(x)=y$\ref{subs:bijektivitaet}\\ \hline
+        bijektiv & $\forall y \in Y : \exists ! \  x \in X:f(x)=y$ \ref{subs:bijektivitaet}\\ \hline
         beschränkte Folge & $\exists b,c : \forall n: b<a_n<c$ \\ \hline
         nach oben beschränkte Folge &  $\exists b: \forall n: a_n<b$\\ \hline
         nach unten beschränkte Folge &  $\exists b: \forall n: b<a_n$\\ \hline
-    \end{tblr}
+    \end{longtblr}
 \end{center}
 
+\textbf{Zwischenwertsatz:} \\
+Eine im Intervall $[a,b]$ stetige Funktion nimmt jeden Wert zwischen $f(a)$ und $f(a)$ mindestens einmal an.\\
 
+\textbf{Satz von Rolle:}\\
+Es sei $u,v\in \mathbb{R}$ mit $u<v$ und $f:[u,v] \to \mathbb{R}$ eine differenzierbare Funktion mit $f(u) = f(v)$. fann gibt es ein $x \in ]u,v[ \to \mathbb{R}$ mit $f'(x)=0$.\\
+
+\textbf{Mittelwertsatz der Differentialrechnung:}\\
+Es sei $u,v\in \mathbb{R}$ mit $u<v$ und $f:[u,v] \to \mathbb{R}$ eine differenzierbare Funktion. Dann gibt es ein $x \in ]u,v[$ mit $f'(x)= \frac{f(v)-f(u)}{v-u}$.\\
+
+\textbf{veralgemeinerter Mittelwertsatz der Differentialrechnung:}\\
+Es sei $u,v\in \mathbb{R}$ mit $u<v$ und $f,g:[u,v] \to \mathbb{R}$ eine differenzierbare Funktionen und $\forall x: g'(x) \neq 0$. Dann gibt es ein $x \in ]u,v[$ mit $\frac{f'(x)}{g'(x)} = \frac{f(v) - f(u)}{g(v)-g(u)}$.\\
+
+
+\ \\
+invertierbarkeit\\
+Induktion
