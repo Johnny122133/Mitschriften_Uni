@@ -16,6 +16,35 @@ $\bm{\forall y \in Y : \exists ! \  x \in X:f(x)=y}$\\
 wenn es für jedes $y\in Y$  \textbf{genau ein} $x \in X$ gibt.\\
 %wenn es auf jeder gedachten Horizontalen in der Zielmenge \textbf{genau einen Schnittpunkt} mit der Funktion gibt.\\
 
+\subsection{Relationen}
+\textbf{Definition Relation:} Es seien $A_1, ..., A_n, n\geq 1$ Mengen, dann heißt die Teilmenge von $R \subseteq A_1 \times ... \times A_n$ eine Relation zwischen den Mengen $A_1,...,A_n$.\\
+\textbf{zweistellige Relation:} n=2\\
+
+\textbf{binäre Relation:} $A=A_1=A_2$ dann wird meist $a_1Ra_2$ oder $R(a_1,a_2)$ geschrieben.\\
+
+\textbf{Typen von Relationen:}
+\begin{enumerate}
+    \item R heißt \textbf{reflexiv}, falls $aRa$ für alle $a\in A$ gilt.
+    \item R heißt \textbf{irreflexiv}, falls $aRa$ für kein $a\in A$ gilt.
+    \item R heißt \textbf{symmetrisch}, falls für $a,b \in A\ aRb$ genau dann gilt, wenn $bRa$.
+    \item R heißt \textbf{antisymmetrisch}, falls für $a,b \in A$ aus $aRb$ und $bRa$ stets $a=b$ folgt.
+    \item R heißt \textbf{transitiv}, falls für $a,b,c \in A $ aus $aRb$ und $bRc$ stets $aRc$ folgt.
+\end{enumerate}
+
+\textbf{Komposition von Relationen:} (Hintereinanderausführung) $S\circ R = \{(a,c) \in A\times C : \text{ es gibt ein }b\in B \text{ mit } aRb \text{ und } bSc \}$ (mit $R\subseteq A\times B$ und $S \subseteq B\times C$ zweistellingen Relationen)\\
+
+\textbf{inverse Relation:} $R^{-1}= \{(b,a) \in B\times A:(a,b)\in R\}$\\
+${(R^{-1})}^{-1} = R$, $(S \circ R)^{-1} = R^{-1} \circ S^{-1}$\\
+
+
+
 \subsection{Funktionen}
+
+\textbf{Definition:} $\{\forall a \in A: \exists ! b\in B : \text{ mit } (a,b)\in f\}$\\
+
+\textbf{Definition 1.4.1}
+\begin{enumerate}
+    \item Die Menge $f(A) = \{f(a \in A : f(a))$
+\end{enumerate}
 
 Bei stetigen Funktionen darf der Grenzwert und die Funktion vertauscht werten ($\lim\limits_{x\to 0 }e^{x\cdot \ln (x)}=e^{\lim\limits_{x\to 0 }x\cdot \ln(x)}$).
