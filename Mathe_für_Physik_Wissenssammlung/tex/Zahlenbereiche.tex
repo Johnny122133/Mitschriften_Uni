@@ -1,0 +1,33 @@
+
+\subsection{Induktionsbeweis}
+
+\begin{enumerate}
+    \item \textbf{Induktionsanfang/Indunktionsvorraussetzung (IV)} wir zeigen dass $\varphi (0)$ gilt
+    \item \textbf{Induktionsannamhe (IA)} wir nehmen an, dass $\forall m \geq 0 :\varphi (m)$ gilt
+    \item \textbf{Induktionsschritt (IS)} wir beweisen dass $\varphi (m)$ auch für alle $\varphi (m+1)$ gilt.
+    \item \textbf{Induktionsschluss} Wir schließen, dass $\varphi (n) \forall b\in \mathbb{N}_0$ gilt
+\end{enumerate}
+
+\subsection{Mächtigkeit von Mengen (card)}
+
+\textbf{Mächtigkeit:} Anzahl der Elemente in einer Menge. Geschrieben als card $A$, $\# A$, $|A|$\\
+
+mit $A$, $B$ endliche Mengen:
+\begin{enumerate}
+    \item $\text{card} (A\cup B) = \text{card} A + \text{card} B - \text{card} (A\cap B)$
+    \item $\text{card} (A\times B) = \text{card} A \cdot \text{card} B$
+    \item $\text{card} P(A) = 2^{card A}$
+\end{enumerate}
+
+Eine \textbf{bijektive} Funktion zwischen zwei Mengen existiert genau dann, wenn sie gleich \textbf{mächtig} sind. Das heißt in der Umkehrung, wenn es eine bijektive Funktion zwischen zwei Mengen gibt, sind diese gleich mächtig.\\
+
+\textbf{abzählbar} $\mathbb{N}$ ist abzählbar. Operationen (Vereinigung, Kreuzprodukt, Kompliment) zwischen zwei abzählbaren Mengen, ergiebt wieder eine abzählbare Menge.\\
+
+\textbf{Definition 2.5.1} Es sei $(P;\leq )$ eine partiell geordnete Menge und $A\subseteq P$.
+\begin{enumerate}
+    \item \textbf{untere Schranke} $\{\forall a \in A :\exists p\in P:p\leq a\}$, $p$... untere Schranke, $A$... nach unten beschränkt
+    \item \textbf{obere Schranke} wie oberes nur umgedreht
+    \item \textbf{Infimum} größte untere Schranke.
+    \item \textbf{Supremum} kleinste obere Schranke
+    \item sei $A$ nach oben beschränkt gilt: $\sup \{ca:a\in A\} = c\cdot \sup A$
+\end{enumerate}

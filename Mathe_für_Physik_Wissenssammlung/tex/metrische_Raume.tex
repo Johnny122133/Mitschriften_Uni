@@ -1,0 +1,18 @@
+
+\subsection{Metrik}
+Eine Metrik auf $M$ ist eine Funktion $d:M\times M \rightarrow \mathbb{R}_0^+$ wenn für alle $x,y,z \in M$ folgendes gilt:
+\begin{enumerate}
+    \item \textbf{Definitheit} $d(x,y) = 0$ g.d.w. $x=y$
+    \item \textbf{Symmetrie} $d(x,y) = d(y,x)$
+    \item \textbf{Dreiecksungleichung} $d(x,z) \leq d(x,y) + d(y,z)$
+\end{enumerate}
+Wenn dies erfüllt ist, nennen wir $M$ einen metrischen Raum.
+
+\subsection{topologische Grundbegriffe}
+\begin{enumerate}
+    \item \textbf{innerer Punkt} $a\in A$ ist ein innerer Punkt wenn $\exists \epsilon >0: U_{\epsilon}(a) \subseteq A$
+    \item \textbf{offene Menge} jedes Element der Menge ist ein innerer Punkt
+    \item \textbf{Berührungspunkt} $m\in M$ ist ein Berührungspunkt wenn $\forall \epsilon >0: U_\epsilon (m) \cap A \neq \{\} $ 
+    \item \textbf{abgeschlossene Menge} jeder Berührungspunkt ist auch Teil der Menge
+    \item \textbf{isolierter Punkt} a ist ein isolierter Punkt wenn $U_\epsilon (a) \cap (A\backslash \{a\})= \{\}$
+\end{enumerate}
